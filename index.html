@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Taller25 - Anyela López</title>
+</head>
+ <body>
+        <h1>Imprime si un numero es par o impar</h1>  
+        <p>Por favor, introduce el primer número:</p>  
+        <input id="num1"><br>  
+        <p>Hasta que numero debe finalizar:</p> 
+        <input id="num2">  
+        <button type="button" onclick="myFunction()">Revisar si es par o impar</button>  
+        <p id="numero">el numero es:</p>  
+
+
+ <script>  
+       function myFunction() 
+       {  
+          var x,y,index;
+          let par = 'par'; 
+          let impar = 'impar';  
+          x = document.getElementById("num1").value;  
+          console.log (x)
+          y = document.getElementById("num2").value;  
+          console.log (y)
+          for (x ; x <= y; x++) 
+          {
+              if(parseFloat(x) % 2 == 0)
+              {
+              console.log(x,"par")
+              document.getElementById("numero").innerHTML = par;  
+              }
+              else
+              {
+              console.log (x,"impar")
+              document.getElementById("numero").innerHTML = impar;  
+              }
+          }
+        } 
+      
+  </script> 
+</body>
+</html> 
+
+
